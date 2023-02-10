@@ -2,6 +2,7 @@ import datetime
 from time import sleep, time
 from modTransmit import send_segments
 from client import Webclient
+import scapy.all as scapy
 from scapy.sendrecv import AsyncSniffer 
 import logging
 import sys
@@ -21,14 +22,24 @@ import sys
 
 INTERFACE_SCRIPT = ""
 INTERFACE_CLIENT = ""
-CLIENT_INFORMATION= ('192.168.0.197',54321,'f8:59:71:ec:fd:1f')
-SERVER_INFORMATION= ('134.96.225.80',8080 ,'f8:59:71:ec:fd:1f')
-SCRIPT_INFORMATION= ('192.168.0.197',55555,'f8:59:71:ec:fd:1f')
-SECONDARY_PORT = 55553
+
+IC_PROBE_INFO= ('10.100.0.2',53867,'a0:36:9f:28:15:7c')
+IC_SPOOF_INFO= ('134.96.225.79',53001,'34:17:eb:cc:1a:b2')
+
+SERVER_INFORMATION= ('134.96.225.80',8080 ,'34:17:eb:cb:d4:14')
+SERVER2_INFORMATION= ('10.100.0.1',8080 ,'a0:36:9f:28:15:34')
+
+OOC_PROBE_INFO= ('10.100.0.2',54321,'a0:36:9f:28:15:7c')
+OOC_SPOOF_INFO= ('134.96.225.79',61513,'34:17:eb:cc:1a:b2')
 
 
 SEQ = 0
 ACK = 0
+
+FIRST = 0
+CON = 0
+NOCON = 0
+
 
 def set_seq(packet):
     global SEQ
@@ -37,13 +48,36 @@ def set_seq(packet):
         SEQ = packet.ack
         ACK = packet.seq
 
-def run():
+def eval_order(packet):
+    global FIRST
+    global NOCON
+    global CON
+    if packet.sprintf('%TCP.flags%')=='SA' and packet.sprintf('%TCP.dport%')=='55555':
+        if FIRST == 0:
+            # If the "connection" port is faster, then there should be a connection
+            FIRST = IC_PROBE_INFO[1]
+            CON += 1
+        else:
+            FIRST = 0
+    else:
+        if FIRST == 0:
+            FIRST = OOC_PROBE_INFO[1]
+            NOCON += 1
+        else:
+            FIRST = 0
 
+def run():
+    global SEQ
+    global ACK
+    global CON
+    global NOCON
     try:
-        www = Webclient((SERVER_INFORMATION[0],SERVER_INFORMATION[1]),(CLIENT_INFORMATION[0],CLIENT_INFORMATION[1]))
-        sniffer = AsyncSniffer(iface=INTERFACE_CLIENT,prn=set_seq,filter=f"tcp and dst port {CLIENT_INFORMATION[1]}")
+        sniffer = AsyncSniffer(iface=INTERFACE_CLIENT,prn=set_seq,filter=f"tcp and dst port {IC_SPOOF_INFO[1]}")
+        orderSniffer = AsyncSniffer(iface=INTERFACE_SCRIPT,prn=eval_order,filter=f"dst port {IC_PROBE_INFO[1]} or dst port {IC_PROBE_INFO[1]}")
 
         sniffer.start()
+        orderSniffer.start()
+        www = Webclient((SERVER_INFORMATION[0],SERVER_INFORMATION[1]),(IC_SPOOF_INFO[0],IC_SPOOF_INFO[1]))
         www.start()
 
         sleep(0.5)
@@ -53,24 +87,24 @@ def run():
 
         startTime = time()
 
-        if send_segments(INTERFACE_SCRIPT, SCRIPT_INFORMATION[0],CLIENT_INFORMATION[0], SERVER_INFORMATION[0],
-                        SCRIPT_INFORMATION[2],CLIENT_INFORMATION[2],SERVER_INFORMATION[2],SEQ,ACK,
-                        SCRIPT_INFORMATION[1],CLIENT_INFORMATION[1],SERVER_INFORMATION[1]) != 1:
-            raise Exception(f"Segments could not be send")
+        for i in range(1,100):      
+            if send_segments(INTERFACE_SCRIPT, str(SEQ), str(ACK), IC_PROBE_INFO[1], OOC_PROBE_INFO[1], IC_SPOOF_INFO[1], OOC_SPOOF_INFO[1], 8080, "SSSSPssssp") != 1:
+                raise Exception(f"Segments could not be send")
+            currentTime = str(datetime.timedelta(seconds=round(time()-startTime)))
+            print(f"[+]CON: {CON}; NOCON {NOCON} in {currentTime}",end="\r")
+            sleep(0.5)
 
-        if send_segments(INTERFACE_SCRIPT, SCRIPT_INFORMATION[0],CLIENT_INFORMATION[0], SERVER_INFORMATION[0],
-                        SCRIPT_INFORMATION[2],CLIENT_INFORMATION[2],SERVER_INFORMATION[2],SEQ,ACK,
-                        SECONDARY_PORT,CLIENT_INFORMATION[1],SERVER_INFORMATION[1]) != 1:
-            raise Exception(f"Segments could not be send")
-
-        currentTime = str(datetime.timedelta(seconds=round(time()-startTime)))
-        print(f"[+] Current time: {currentTime}")
+        print("Finished \n")
+        logging.info(f"CON: {CON}; NOCON {NOCON} in {currentTime}")
+        CON = 0
+        NOCON = 0
 
     except Exception as e:
         logging.error(f"[!] Error: {e}")
         sys.exit(-1)
     finally:
         sniffer.stop()
+        orderSniffer.stop()
         www.abort_webserver()
         www.join()
         for i in range(10):
@@ -91,6 +125,6 @@ if __name__ == "__main__":
     INTERFACE_SCRIPT = sys.argv[2]
     INTERFACE_CLIENT = sys.argv[3]
 
-    logging.basicConfig(filename="run.log",level=logging.INFO,format="%(asctime)s %(message)s")
+    logging.basicConfig(filename="../logs/run.log",level=logging.INFO,format="%(asctime)s %(message)s")
 
     run()

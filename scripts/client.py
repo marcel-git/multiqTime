@@ -24,7 +24,6 @@ class Webclient(Thread):
             print(f"[+] Client connecting to {self.SERVER_ADDRESS[0]}:{self.SERVER_ADDRESS[1]} with {self.CLIENT_ADDRESS[0]}:{self.CLIENT_ADDRESS[1]}")
             conn.connect()
             
-            print("post con")
             while not Webclient.DO_ABORT:
                 Webclient.CON_INITING = True
 

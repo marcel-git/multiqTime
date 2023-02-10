@@ -20,7 +20,7 @@
 #include <net/ethernet.h>
 #include <linux/if_packet.h>
 #include <asm/unistd.h>
-#include <python3.9/Python.h>
+#include <python3.7/Python.h>
 
 #ifndef __NR_sendmmsg
 #if defined( __PPC__)
@@ -290,10 +290,7 @@ void build_tcp (struct tcp_options tcpOptions, char *payload, struct msghdr *mes
 
 }
 
-void do_tcp(int sock, char *interface, struct tcp_options sOptions, struct tcp_options pOptions, int length) {
-    struct mmsghdr messages[length];
-    memset(messages, 0, sizeof(messages));
-
+void do_tcp(int sock, char *interface, struct mmsghdr *messages, struct tcp_options sOptions, struct tcp_options controlOptions, struct tcp_options pOptions, struct tcp_options controlProbes, int length, char *pattern) {
     //Get interface index
     struct ifreq ifreq_buf = {};
     strncpy(ifreq_buf.ifr_name, interface, IFNAMSIZ);
@@ -304,16 +301,6 @@ void do_tcp(int sock, char *interface, struct tcp_options sOptions, struct tcp_o
     if_eth_addr.sll_family = PF_PACKET;
     if_eth_addr.sll_ifindex = ifindex;
     if_eth_addr.sll_halen = ETH_ALEN;
- 
-    // Create probe
-
-    struct msghdr hdr_probe = {};
-    char dgram_probe[4096] = "";
-    struct iovec iov_probe = {};
-    build_tcp(pOptions, "Probe", &hdr_probe, &iov_probe, (char *) &dgram_probe);
-    hdr_probe.msg_name = &if_eth_addr;
-    hdr_probe.msg_namelen = sizeof(if_eth_addr);
-    messages[length-1].msg_hdr = hdr_probe;
 
     // Create spoofed segments
 
@@ -325,15 +312,33 @@ void do_tcp(int sock, char *interface, struct tcp_options sOptions, struct tcp_o
     memset(dgrams_spoofed, 0, sizeof(dgrams_spoofed));
     memset(iovecs_spoofed, 0, sizeof(iovecs_spoofed));
 
-    for(int i = 0; i < length-1; i++) {
-        char *payload = "Test"; 
-        sOptions.seq_no = sOptions.seq_no + 1;
-        build_tcp(sOptions, payload, &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
+    int probe = 0;
+    char *payload = "ET /"; 
+
+    for(int i = 0; i<strlen(pattern); i++) {
+        char curr = pattern[i];
+        sOptions.seq_no++;
+        controlOptions.seq_no++;
+        switch (curr)
+        {
+        case 's': build_tcp(sOptions, &payload[i], &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
+            break;
+        case 'S': build_tcp(controlOptions, &payload[i], &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
+            break;
+        case 'p': build_tcp(pOptions,"Probe", &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
+            break;
+        case 'P': build_tcp(controlProbes,"Probe", &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
+            break;   
+        default:
+            break;
+        }
         hdrs_spoofed[i].msg_name = &if_eth_addr;
         hdrs_spoofed[i].msg_namelen = sizeof(if_eth_addr);
         messages[i].msg_hdr = hdrs_spoofed[i];
     }
+}
 
+void send_messages(struct mmsghdr *messages, int sock, int length) {
     // Send everything off
 
 	int retval;
@@ -348,62 +353,96 @@ static PyObject *py_send_segments(PyObject *self, PyObject *args) {
 
     char *interface = "";
 
-    char *script_ip = "";
-    char *client_ip = "";
-    char *server_ip = "";
+    char *seq_no = "";
+    char *ack_no = "";
+    char *pattern = "";
 
-    char *script_mac = "";
-    char *client_mac = "";
-    char *server_mac = "";
-
-    int seq_no;
-    int ack_no;
-
-    int script_port;
+    int ic_port;
+    int ooc_port;
     int client_port;
+    int no_client_port;
     int server_port;
 
-    if (!PyArg_ParseTuple(args, "sssssssiiiii", &interface, &script_ip, &client_ip, &server_ip, &script_mac, &client_mac, &server_mac, &seq_no, &ack_no, &script_port, &client_port, &server_port)) {
+    if (!PyArg_ParseTuple(args, "sssiiiiis", &interface, &seq_no, &ack_no, &ic_port, &ooc_port, &client_port, &no_client_port, &server_port, &pattern)) {
         return NULL;
     }
 
     int sockfd = create_socket(interface);
 
     struct tcp_options spoofedOptions = {
-        .srcIp = client_ip,
-        .dstIp = server_ip, 
+        .srcIp = "134.96.225.79",
+        .dstIp = "134.96.225.80", 
         .sPort = client_port,
         .dPort = server_port,
         .b_syn = 0,
-        .b_ack = 0,
+        .b_ack = 1,
         .b_psh = 1,
         .b_rst = 0,
-        .seq_no = seq_no,
-        .ack_no = ack_no,
+        .seq_no = atoi(seq_no),
+        .ack_no = atoi(ack_no),
         .eOptions = {
-            .smac = client_mac,
-            .dmac = server_mac,
+            .smac = "34:17:eb:cc:1a:b2",
+            .dmac = "34:17:eb:cb:d4:14",
         },
     };
 
+    struct tcp_options controlOptions = {
+        .srcIp = "134.96.225.79",
+        .dstIp = "134.96.225.80", 
+        .sPort = no_client_port,
+        .dPort = server_port,
+        .b_syn = 0,
+        .b_ack = 1,
+        .b_psh = 1,
+        .b_rst = 0,
+        .seq_no = atoi(seq_no),
+        .ack_no = atoi(ack_no),
+        .eOptions = {
+            .smac = "34:17:eb:cc:1a:b2",
+            .dmac = "34:17:eb:cb:d4:14",
+        },  
+    };
+
     struct tcp_options probeOptions = {
-        .srcIp = script_ip,
-        .dstIp = server_ip,
-        .sPort = script_port,
+        .srcIp = "10.100.0.2",
+        .dstIp = "10.100.0.1",
+        .sPort = ic_port,
         .dPort = server_port,
         .b_syn = 1,
         .b_ack = 0,
         .b_psh = 0,
         .b_rst = 0,
-        .seq_no = 0,
-        .ack_no = 0,
+        .seq_no = atoi(seq_no),
+        .ack_no = atoi(ack_no),
         .eOptions = {
-            .smac = script_mac,
-            .dmac = server_mac,
+            .smac = "a0:36:9f:28:15:7c",
+            .dmac = "a0:36:9f:28:15:34",
         },
     };
 
-    do_tcp(sockfd, interface, spoofedOptions, probeOptions, 6);
+    struct tcp_options controlProbes = {
+        .srcIp = "10.100.0.2",
+        .dstIp = "10.100.0.1",
+        .sPort = ooc_port,
+        .dPort = server_port,
+        .b_syn = 1,
+        .b_ack = 0,
+        .b_psh = 0,
+        .b_rst = 0,
+        .seq_no = atoi(seq_no),
+        .ack_no = atoi(ack_no),
+        .eOptions = {
+            .smac = "a0:36:9f:28:15:7c",
+            .dmac = "a0:36:9f:28:15:34",
+        },
+    };
+
+    struct mmsghdr messages[strlen(pattern)];
+    memset(messages, 0, sizeof(messages));
+
+    do_tcp(sockfd, interface, messages, spoofedOptions, controlOptions, probeOptions, controlProbes, strlen(pattern), pattern);
+
+    send_messages(messages, sockfd, sizeof(messages));
 
     return PyLong_FromLong(1);
 }
