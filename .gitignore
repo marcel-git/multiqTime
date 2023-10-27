@@ -130,3 +130,6 @@ dmypy.json
 
 # Cpython build folder
 /build
+
+# Logs
+run.log

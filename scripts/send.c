@@ -290,7 +290,7 @@ void build_tcp (struct tcp_options tcpOptions, char *payload, struct msghdr *mes
 
 }
 
-void do_tcp(int sock, char *interface, struct mmsghdr *messages, struct tcp_options sOptions, struct tcp_options controlOptions, struct tcp_options pOptions, struct tcp_options controlProbes, int length, char *pattern) {
+void do_tcp(int sock, char *interface, struct mmsghdr *messages, struct tcp_options sOptions, struct tcp_options controlOptions, struct tcp_options pOptions, struct tcp_options controlProbes, char* spoofed_payload, char* control_payload, int length, char *pattern) {
     //Get interface index
     struct ifreq ifreq_buf = {};
     strncpy(ifreq_buf.ifr_name, interface, IFNAMSIZ);
@@ -312,18 +312,22 @@ void do_tcp(int sock, char *interface, struct mmsghdr *messages, struct tcp_opti
     memset(dgrams_spoofed, 0, sizeof(dgrams_spoofed));
     memset(iovecs_spoofed, 0, sizeof(iovecs_spoofed));
 
+    char payload[1];
     int probe = 0;
-    char *payload = "ET /"; 
-
     for(int i = 0; i<strlen(pattern); i++) {
         char curr = pattern[i];
         sOptions.seq_no++;
         controlOptions.seq_no++;
+        int currentChar = i%strlen(spoofed_payload);
         switch (curr)
         {
-        case 's': build_tcp(sOptions, &payload[i], &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
+        case 's': 
+            payload[0] = spoofed_payload[currentChar];
+            build_tcp(sOptions, payload, &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
             break;
-        case 'S': build_tcp(controlOptions, &payload[i], &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
+        case 'S': 
+            payload[0] = control_payload[currentChar];
+            build_tcp(controlOptions, payload, &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
             break;
         case 'p': build_tcp(pOptions,"Probe", &hdrs_spoofed[i], &iovecs_spoofed[i],(char *) &dgrams_spoofed[i]);
             break;
@@ -332,6 +336,7 @@ void do_tcp(int sock, char *interface, struct mmsghdr *messages, struct tcp_opti
         default:
             break;
         }
+
         hdrs_spoofed[i].msg_name = &if_eth_addr;
         hdrs_spoofed[i].msg_namelen = sizeof(if_eth_addr);
         messages[i].msg_hdr = hdrs_spoofed[i];
@@ -356,6 +361,8 @@ static PyObject *py_send_segments(PyObject *self, PyObject *args) {
     char *seq_no = "";
     char *ack_no = "";
     char *pattern = "";
+    char *spoofed_payload = "";
+    char *control_payload = "";
 
     int ic_port;
     int ooc_port;
@@ -363,15 +370,16 @@ static PyObject *py_send_segments(PyObject *self, PyObject *args) {
     int no_client_port;
     int server_port;
 
-    if (!PyArg_ParseTuple(args, "sssiiiiis", &interface, &seq_no, &ack_no, &ic_port, &ooc_port, &client_port, &no_client_port, &server_port, &pattern)) {
+    if (!PyArg_ParseTuple(args, "sssiiiiisss", &interface, &seq_no, &ack_no, &ic_port, &ooc_port, &client_port, &no_client_port, &server_port, &pattern, &spoofed_payload, &control_payload)) {
         return NULL;
     }
 
     int sockfd = create_socket(interface);
 
+    // Spoofed segments going to queue 0
     struct tcp_options spoofedOptions = {
-        .srcIp = "134.96.225.79",
-        .dstIp = "134.96.225.80", 
+        .srcIp = "192.168.1.21",
+        .dstIp = "192.168.1.6", 
         .sPort = client_port,
         .dPort = server_port,
         .b_syn = 0,
@@ -381,14 +389,15 @@ static PyObject *py_send_segments(PyObject *self, PyObject *args) {
         .seq_no = atoi(seq_no),
         .ack_no = atoi(ack_no),
         .eOptions = {
-            .smac = "34:17:eb:cc:1a:b2",
-            .dmac = "34:17:eb:cb:d4:14",
+            .smac = "a0:36:9f:28:15:7c",
+            .dmac = "a0:36:9f:28:15:34",
         },
     };
 
+    // Spoofed segments going to queue 1
     struct tcp_options controlOptions = {
-        .srcIp = "134.96.225.79",
-        .dstIp = "134.96.225.80", 
+        .srcIp = "192.168.1.21",
+        .dstIp = "192.168.1.6", 
         .sPort = no_client_port,
         .dPort = server_port,
         .b_syn = 0,
@@ -398,19 +407,19 @@ static PyObject *py_send_segments(PyObject *self, PyObject *args) {
         .seq_no = atoi(seq_no),
         .ack_no = atoi(ack_no),
         .eOptions = {
-            .smac = "34:17:eb:cc:1a:b2",
-            .dmac = "34:17:eb:cb:d4:14",
+            .smac = "a0:36:9f:28:15:7c",
+            .dmac = "a0:36:9f:28:15:34",
         },  
     };
 
     struct tcp_options probeOptions = {
-        .srcIp = "10.100.0.2",
+        .srcIp = "10.1.0.2",
         .dstIp = "10.100.0.1",
         .sPort = ic_port,
         .dPort = server_port,
-        .b_syn = 1,
-        .b_ack = 0,
-        .b_psh = 0,
+        .b_syn = 0,
+        .b_ack = 1,
+        .b_psh = 1,
         .b_rst = 0,
         .seq_no = atoi(seq_no),
         .ack_no = atoi(ack_no),
@@ -421,13 +430,13 @@ static PyObject *py_send_segments(PyObject *self, PyObject *args) {
     };
 
     struct tcp_options controlProbes = {
-        .srcIp = "10.100.0.2",
+        .srcIp = "10.1.0.2",
         .dstIp = "10.100.0.1",
         .sPort = ooc_port,
         .dPort = server_port,
-        .b_syn = 1,
-        .b_ack = 0,
-        .b_psh = 0,
+        .b_syn = 0,
+        .b_ack = 1,
+        .b_psh = 1,
         .b_rst = 0,
         .seq_no = atoi(seq_no),
         .ack_no = atoi(ack_no),
@@ -440,7 +449,7 @@ static PyObject *py_send_segments(PyObject *self, PyObject *args) {
     struct mmsghdr messages[strlen(pattern)];
     memset(messages, 0, sizeof(messages));
 
-    do_tcp(sockfd, interface, messages, spoofedOptions, controlOptions, probeOptions, controlProbes, strlen(pattern), pattern);
+    do_tcp(sockfd, interface, messages, spoofedOptions, controlOptions, probeOptions, controlProbes, spoofed_payload, control_payload, strlen(pattern), pattern);
 
     send_messages(messages, sockfd, sizeof(messages));
 

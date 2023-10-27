@@ -1,0 +1,31 @@
+For 2 queues
+# The Queues must match, otherwise the evaluation is wrong!
+# QUEUE 1
+IC_PROBE_INFO= ('10.1.0.2',65524,'a0:36:9f:28:15:7c')
+IC_SPOOF_INFO= ('192.168.1.21',54252,'a0:36:9f:28:15:7c')
+
+# QUEUE 0
+OOC_PROBE_INFO= ('10.1.0.2',64172,'a0:36:9f:28:15:7c')
+OOC_SPOOF_INFO= ('192.168.1.21',51241,'a0:36:9f:28:15:7c')
+
+# QUEUE 1
+OOC2_PROBE_INFO= ('10.1.0.2',52745,'a0:36:9f:28:15:7c')
+OOC2_SPOOF_INFO= ('192.168.1.21',57518,'a0:36:9f:28:15:7c')
+
+For 4 queues
+# The Queues must match, otherwise the evaluation is wrong!
+# QUEUE 1
+IC_PROBE_INFO= ('10.1.0.2',62599,'a0:36:9f:28:15:7c')
+IC_SPOOF_INFO= ('192.168.1.21',58671,'a0:36:9f:28:15:7c')
+
+# QUEUE 0
+OOC_PROBE_INFO= ('10.1.0.2',53883,'a0:36:9f:28:15:7c')
+OOC_SPOOF_INFO= ('192.168.1.21',64651,'a0:36:9f:28:15:7c')
+
+# QUEUE 1
+OOC2_PROBE_INFO= ('10.1.0.2',49771,'a0:36:9f:28:15:7c')
+OOC2_SPOOF_INFO= ('192.168.1.21',53059,'a0:36:9f:28:15:7c')
+
+53272, 51794 63341, 63877
+
+Q 0, Q 1, Q 2, Q 3

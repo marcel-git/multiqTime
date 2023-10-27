@@ -5,7 +5,7 @@ import logging
 # Uses https://github.com/stackpath/rxtxcpu, run in folder /contrib/rss
 
 probeTuple = ('10.100.0.2','10.100.0.1')
-spoofTuple = ('134.96.225.79','134.96.225.80')
+spoofTuple = ('192.168.1.6','192.168.1.7')
 destPort = '8080'
 
 #port 49152 - 65535

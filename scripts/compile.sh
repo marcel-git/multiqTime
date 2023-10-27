@@ -1,2 +1,2 @@
-sudo python3 setup.py build
-sudo python3 setup.py install
+sudo python3 setup.py build_ext --inplace
+sudo pip install .

@@ -1,0 +1,2116 @@
+------------------------------------------------------
+IC Probes: 10.1.0.2:61702 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:62734 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  cccc1a83
+        nidx:   131
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  283cbf87
+        nidx:   391
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:64884 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:58138 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  02c01a16
+        nidx:   22
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  76064062
+        nidx:   98
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53697 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:65143 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  3f890221
+        nidx:   33
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  7e7614e9
+        nidx:   233
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:57198 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:65142 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  584a2433
+        nidx:   51
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  15d2dd73
+        nidx:   371
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:56635 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57134 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  d426d214
+        nidx:   20
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  157a6210
+        nidx:   16
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:63037 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:63183 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  b16ddbad
+        nidx:   429
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  84bfda05
+        nidx:   5
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61246 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64715 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  9cbb1ce6
+        nidx:   230
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  4eee4e9e
+        nidx:   158
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:53809 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:59627 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  1d49c4ec
+        nidx:   236
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  05ef3bac
+        nidx:   428
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64756 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:61871 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  7e7cf74c
+        nidx:   332
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  3d08f0f0
+        nidx:   240
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:61258 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:49899 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  321bd773
+        nidx:   371
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  9bf4c077
+        nidx:   119
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64698 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:62557 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  8d9dabf2
+        nidx:   498
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  b53569a6
+        nidx:   422
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:61608 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:59752 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  b1621e0d
+        nidx:   13
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  27257ba1
+        nidx:   417
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64166 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:54576 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  c3957768
+        nidx:   360
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  213747ec
+        nidx:   492
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:60576 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:62807 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  eec7a0d9
+        nidx:   217
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  d9f83091
+        nidx:   145
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:63843 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:49411 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  75ff208c
+        nidx:   140
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  72fad310
+        nidx:   272
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:58410 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:52238 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  c43b602d
+        nidx:   45
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  153f88bd
+        nidx:   189
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64255 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59288 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  3251f87e
+        nidx:   126
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  9e19840e
+        nidx:   14
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:50050 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:59814 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  47225478
+        nidx:   120
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  7c136e8c
+        nidx:   140
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61097 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57935 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  e2222214
+        nidx:   20
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  c434c0e8
+        nidx:   232
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:53127 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:64140 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  79f8322f
+        nidx:   47
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  c4f079df
+        nidx:   479
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:56013 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:49819 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  acc7ab40
+        nidx:   320
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  2fbd3984
+        nidx:   388
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:49965 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:61323 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  85433da5
+        nidx:   421
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  bc581159
+        nidx:   345
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61198 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64477 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  795c7633
+        nidx:   51
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  6c2bcb33
+        nidx:   307
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:60601 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54736 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  4eadbce9
+        nidx:   233
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  7b13bb15
+        nidx:   277
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:62810 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57154 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  395f875b
+        nidx:   347
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  70147c2f
+        nidx:   47
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:59622 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:61847 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  e5488c66
+        nidx:   102
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  559b0316
+        nidx:   278
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:54107 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:54038 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  837728b1
+        nidx:   177
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  327e0c5d
+        nidx:   93
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:53832 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56157 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  4fd06db6
+        nidx:   438
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  8a5fdf86
+        nidx:   390
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:52179 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64977 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  011f36c4
+        nidx:   196
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  64995b30
+        nidx:   304
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:57676 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:65110 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  b882ce17
+        nidx:   23
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  b68ffb3f
+        nidx:   319
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:59587 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53806 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  375851d6
+        nidx:   470
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  8e865b72
+        nidx:   370
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:58053 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:57743 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  c8dba180
+        nidx:   384
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  03136cf0
+        nidx:   240
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60838 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:51495 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  159752bb
+        nidx:   187
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  f1c3b3a3
+        nidx:   419
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:56214 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:50535 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  bcbae452
+        nidx:   82
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  effabd2e
+        nidx:   302
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:56711 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:51436 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  0e8b5a07
+        nidx:   7
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  0fd3f9bb
+        nidx:   443
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:53274 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:50579 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  872304a0
+        nidx:   160
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  e98d3f28
+        nidx:   296
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:63233 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:58949 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  177cbee4
+        nidx:   228
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  0988d424
+        nidx:   36
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:65155 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:55312 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  649f43ea
+        nidx:   490
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  199658c2
+        nidx:   194
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:50853 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:51056 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  0191a0fe
+        nidx:   254
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  07eabce2
+        nidx:   226
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:64489 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54331 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  8fbb4685
+        nidx:   133
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  265ed741
+        nidx:   321
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:52971 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:60957 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  c8fd88d9
+        nidx:   217
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  a965e631
+        nidx:   49
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:49701 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54833 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  dc5c005f
+        nidx:   95
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  74cdf8db
+        nidx:   219
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:62599 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:58671 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  aeced771
+        nidx:   369
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  7d83ea1d
+        nidx:   29
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:53883 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:64651 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  f441aa34
+        nidx:   52
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  1f40ddb8
+        nidx:   440
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61301 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:52037 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  1e17bba4
+        nidx:   420
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  dcd7b060
+        nidx:   96
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:63045 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:61115 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  8850bb6d
+        nidx:   365
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  8dd4df45
+        nidx:   325
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61480 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57506 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  19b5579e
+        nidx:   414
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  881c8cba
+        nidx:   186
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:60132 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:63363 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  3aaf3acf
+        nidx:   207
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  96e746bf
+        nidx:   191
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60014 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:62958 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  2ade8ea2
+        nidx:   162
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  7218437e
+        nidx:   382
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:65386 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60288 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  0c004b73
+        nidx:   371
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  1a40cc0f
+        nidx:   15
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53286 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:61653 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  f559c520
+        nidx:   288
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  e58c5034
+        nidx:   52
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:55697 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56324 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  1210a907
+        nidx:   263
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  30dfcf0f
+        nidx:   271
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60787 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:58515 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  db193f6b
+        nidx:   363
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  7345c6c7
+        nidx:   199
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:64498 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54290 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  1a033e78
+        nidx:   120
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  63d3a1a4
+        nidx:   420
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:55762 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:65368 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  1dc89776
+        nidx:   374
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  c0ab906e
+        nidx:   110
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:61931 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56542 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  6ad184b5
+        nidx:   181
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  37baa4dd
+        nidx:   221
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:51644 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:49679 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  d03257c8
+        nidx:   456
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  db390ee8
+        nidx:   232
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:57002 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:53139 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  6fb16829
+        nidx:   41
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  393599d5
+        nidx:   469
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:49771 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53059 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  2fbd5ce1
+        nidx:   225
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  86f60ff9
+        nidx:   505
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:53354 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54723 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  336afd53
+        nidx:   339
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  63df5adb
+        nidx:   219
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60641 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59904 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  d4cdfa65
+        nidx:   101
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  66fc2155
+        nidx:   341
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:56978 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60448 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  07229bcf
+        nidx:   463
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  5a8e3c4f
+        nidx:   79
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:63911 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64195 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  966fc85f
+        nidx:   95
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  5cb5ecfb
+        nidx:   251
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:52588 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:61584 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  1aeb28d6
+        nidx:   214
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  c56f38ee
+        nidx:   238
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53354 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:55976 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  336afd53
+        nidx:   339
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  33e730d3
+        nidx:   211
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:59151 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:62636 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  2875cb30
+        nidx:   304
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  c20f105c
+        nidx:   92
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:49997 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53495 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  77b088cf
+        nidx:   207
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  3da04f93
+        nidx:   403
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:61354 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:63573 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  683f2b8a
+        nidx:   394
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  77d66d3e
+        nidx:   318
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:59206 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59654 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  9f0b08bf
+        nidx:   191
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  77990153
+        nidx:   339
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:55203 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:57199 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  6787e8d0
+        nidx:   208
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  2f7038ac
+        nidx:   172
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53677 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:55066 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  5ae71c1e
+        nidx:   30
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  d0f94e3a
+        nidx:   58
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:62733 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:57928 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  6ad4c7d5
+        nidx:   469
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  80ab5fd9
+        nidx:   473
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:51885 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64216 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  c372a466
+        nidx:   102
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  c90d9406
+        nidx:   6
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:51669 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:49931 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  c411b20b
+        nidx:   11
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  15bb9847
+        nidx:   71
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:58351 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57664 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  074bdefb
+        nidx:   251
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  3381b047
+        nidx:   71
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:57643 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:53782 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  0eeee44c
+        nidx:   76
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  e615a894
+        nidx:   148
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:52284 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:61571 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  d99453a0
+        nidx:   416
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  dda3d920
+        nidx:   288
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:62968 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:50665 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  07078c49
+        nidx:   73
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  e5623b25
+        nidx:   293
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:59564 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:49750 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  0c40e2be
+        nidx:   190
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  2afd81fe
+        nidx:   510
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:58391 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:58339 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  dde56837
+        nidx:   55
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  8c48a0ab
+        nidx:   171
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:58947 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:49855 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  3a2d578a
+        nidx:   394
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  96092dae
+        nidx:   430
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:52428 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:61676 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  c50ae3c0
+        nidx:   448
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  e6bb6a48
+        nidx:   72
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53638 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:61175 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  2ab80e36
+        nidx:   54
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  4be7e736
+        nidx:   310
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:62540 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:57545 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  84b539a0
+        nidx:   416
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  a9ed0db4
+        nidx:   436
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61943 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:65526 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  bbf66379
+        nidx:   377
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  696e3029
+        nidx:   41
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:57748 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60003 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  8a35c108
+        nidx:   264
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  ca793968
+        nidx:   360
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53940 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59506 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  c4d37683
+        nidx:   131
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  0d526e0f
+        nidx:   15
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:51543 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:52216 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  59149f55
+        nidx:   341
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  6ddef1e9
+        nidx:   489
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:59992 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59399 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  e002b2dc
+        nidx:   220
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  c8566c00
+        nidx:   0
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:51155 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:57022 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  4e88ab6f
+        nidx:   367
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  2f7cc3d3
+        nidx:   467
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53200 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59391 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  2a7372a1
+        nidx:   161
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  2875ae55
+        nidx:   85
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:54683 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60032 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  e521c952
+        nidx:   338
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  ce2b68c6
+        nidx:   198
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:50360 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:50476 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  51275ccc
+        nidx:   204
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  6d561a6c
+        nidx:   108
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:59234 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:58553 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  26bf1c95
+        nidx:   149
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  68be1d75
+        nidx:   373
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:52198 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:58971 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  95b5a7ed
+        nidx:   493
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  ed7d5725
+        nidx:   293
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:50382 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60260 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  ca55f394
+        nidx:   404
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  5a8d0290
+        nidx:   144
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:57652 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:62693 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  81bfaed7
+        nidx:   215
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  7571d3d3
+        nidx:   467
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:56458 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:58426 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  26d99c01
+        nidx:   1
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  9e1ff9b1
+        nidx:   433
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:62523 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:62695 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  74635f62
+        nidx:   354
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  40a3b71e
+        nidx:   286
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:53954 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56819 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  5fa1d9db
+        nidx:   475
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  bcb54497
+        nidx:   151
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:65204 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:63916 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  c5e7b60e
+        nidx:   14
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  59f3293e
+        nidx:   318
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:53164 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60374 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  09a72007
+        nidx:   7
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  226f451b
+        nidx:   283
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64841 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:60119 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  1b1e120c
+        nidx:   12
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  9da02848
+        nidx:   72
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:61504 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56729 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  66327bc7
+        nidx:   455
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  f6e00c03
+        nidx:   3
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:54243 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:55112 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  433392c4
+        nidx:   196
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  f23ff548
+        nidx:   328
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:64296 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:64856 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  1d6655aa
+        nidx:   426
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  2a9e420a
+        nidx:   10
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:54073 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64375 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  4456f916
+        nidx:   278
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  df075912
+        nidx:   274
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:60270 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:62200 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  feb52a6b
+        nidx:   107
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  50ddc6d3
+        nidx:   211
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60462 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:54386 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  e45f26d2
+        nidx:   210
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  912014ce
+        nidx:   206
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:52231 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:53094 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  ef710d11
+        nidx:   273
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  54e6d249
+        nidx:   73
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61258 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:56921 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  321bd773
+        nidx:   371
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  31c7a01b
+        nidx:   27
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:56472 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:62549 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  55b1b455
+        nidx:   85
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  3841f095
+        nidx:   149
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53019 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:56721 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  00089c70
+        nidx:   112
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  7b949530
+        nidx:   304
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:65335 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60299 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  e72df603
+        nidx:   3
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  c942f86b
+        nidx:   107
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:51130 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57099 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  5aab4eac
+        nidx:   172
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  c76abfa0
+        nidx:   416
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:57370 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:55534 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  54c6e3ca
+        nidx:   458
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  a747273a
+        nidx:   314
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64309 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:60934 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  a7e57bfc
+        nidx:   508
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  3cdd9ecc
+        nidx:   204
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:62946 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56700 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  f91b3d2e
+        nidx:   302
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  dd890b06
+        nidx:   262
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:51594 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57889 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  1aee6bb6
+        nidx:   438
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  9488ba1a
+        nidx:   26
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:61255 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:58404 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  ce22b5bc
+        nidx:   444
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  7aea7ab0
+        nidx:   176
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60012 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64463 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  1f0cea6f
+        nidx:   111
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  1f43e367
+        nidx:   359
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:51184 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:59408 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  b3a32074
+        nidx:   116
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  ca73bfa8
+        nidx:   424
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:54547 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59998 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  c08219f2
+        nidx:   498
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  d3a73172
+        nidx:   370
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:57225 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:50705 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  46f147fb
+        nidx:   507
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  4ad664db
+        nidx:   219
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:53651 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:52708 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  1d4fb953
+        nidx:   339
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  23d62d73
+        nidx:   371
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:60713 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54721 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  74ab1d2a
+        nidx:   298
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  560d3e16
+        nidx:   22
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:62231 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:51478 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  0be74de4
+        nidx:   484
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  7f8010ec
+        nidx:   236
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:58703 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56895 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  93ee8a72
+        nidx:   114
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  ec0f43da
+        nidx:   474
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60565 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53675 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  7a6d31f0
+        nidx:   496
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  69429fb0
+        nidx:   432
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:53958 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:61197 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  4548ebbd
+        nidx:   445
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  3bb40e61
+        nidx:   97
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:56957 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:55481 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  94ed6134
+        nidx:   308
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  f4cc67b4
+        nidx:   436
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:60424 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56348 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  68395635
+        nidx:   53
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  fb111aa5
+        nidx:   165
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64917 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59623 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  33402f75
+        nidx:   373
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  927290f9
+        nidx:   249
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:62325 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:55328 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  ccc69c43
+        nidx:   67
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  fc713217
+        nidx:   23
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64671 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:54459 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  5f8d7642
+        nidx:   66
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  8e899ed2
+        nidx:   210
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:61315 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:55529 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  2db25d6f
+        nidx:   367
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  e3d8b80b
+        nidx:   11
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:50221 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53291 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  ce07a23a
+        nidx:   58
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  15fe72ea
+        nidx:   234
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:63610 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:52564 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  01fe9875
+        nidx:   117
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  6ee60e35
+        nidx:   53
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:63313 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59831 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  0068615b
+        nidx:   347
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  510deb8f
+        nidx:   399
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:64907 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60895 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  d7b5ac74
+        nidx:   116
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  5b902ee4
+        nidx:   228
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:60086 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:58865 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  186981bd
+        nidx:   445
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  600fb3a9
+        nidx:   425
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:53292 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56309 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  4dff38de
+        nidx:   222
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  0ca1296a
+        nidx:   362
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:61900 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:49199 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  8d133dc8
+        nidx:   456
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  9251fac0
+        nidx:   192
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:59398 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:59527 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  bf6c709f
+        nidx:   159
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  60812593
+        nidx:   403
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:52690 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53415 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  f594c408
+        nidx:   8
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  2ab4902c
+        nidx:   44
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:50456 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:60863 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  8ec697da
+        nidx:   474
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  a9639b8e
+        nidx:   398
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:58866 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53998 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  22e7cbfb
+        nidx:   507
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  77ff81c7
+        nidx:   455
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:64245 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54054 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  8af70580
+        nidx:   384
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  d7996688
+        nidx:   136
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:56729 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:59737 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  ea7ed906
+        nidx:   262
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  a966d8ee
+        nidx:   238
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:63617 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:62222 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  ce621c71
+        nidx:   113
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  b71384d1
+        nidx:   209
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:62414 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:50041 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  52f48b61
+        nidx:   353
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  94200579
+        nidx:   377
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:49916 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:62779 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  854fc6da
+        nidx:   218
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  bc962eae
+        nidx:   174
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:55416 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:55434 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  7a8fa19e
+        nidx:   414
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  4f5da036
+        nidx:   54
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:49560 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:63287 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  530b377b
+        nidx:   379
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  c13e579f
+        nidx:   415
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:62124 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:52663 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  41befe0f
+        nidx:   15
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  6ab45f9b
+        nidx:   411
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:56829 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56908 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  02645e0a
+        nidx:   10
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  0630177e
+        nidx:   382
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64787 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:57550 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  b4ac304d
+        nidx:   77
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  ed729285
+        nidx:   133
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:56209 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:64609 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  f8257b63
+        nidx:   355
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  fdc2dcbf
+        nidx:   191
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:56679 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:52470 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  54afa6fe
+        nidx:   254
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  84d5a1ee
+        nidx:   494
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:60241 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:53972 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  d2b946bc
+        nidx:   188
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  2abe16ec
+        nidx:   236
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:52429 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64669 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  aeae2a5a
+        nidx:   90
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  76c1c78a
+        nidx:   394
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:57155 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:52351 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  072e60b0
+        nidx:   176
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  cad2b8d4
+        nidx:   212
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64901 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:52381 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  75fa63ec
+        nidx:   492
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  a52420e0
+        nidx:   224
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:62135 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:54308 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  d40686f2
+        nidx:   242
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  a90f9dda
+        nidx:   474
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:62491 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:60046 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  d73e792e
+        nidx:   302
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  6c64a75e
+        nidx:   350
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:63785 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:62468 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  9cf74e54
+        nidx:   84
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  44f1e6b0
+        nidx:   176
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:59474 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:58686 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  b2919d46
+        nidx:   326
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  509d6f1e
+        nidx:   286
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:60535 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:55061 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  159ba9c4
+        nidx:   452
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  19124838
+        nidx:   56
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:50816 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:56738 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  d3817d4e
+        nidx:   334
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  c00552b2
+        nidx:   178
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:52064 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:49192 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  1259b8d5
+        nidx:   213
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  d6ce65f1
+        nidx:   497
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:63701 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:64132 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  c39ff1a8
+        nidx:   424
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  4984e0ec
+        nidx:   236
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:64274 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:51242 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  4027c281
+        nidx:   129
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  d99175a5
+        nidx:   421
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:51256 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:50287 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  b66788f4
+        nidx:   244
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  b6e580d4
+        nidx:   212
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:50354 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:55930 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  e981a132
+        nidx:   306
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  b9f6c232
+        nidx:   50
+        nqueue: 2
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:55112 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53311 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  eea1204d
+        nidx:   77
+        nqueue: 1 
+Spoofed; in-connection:
+        b'hash:  49ad0c15
+        nidx:   21
+        nqueue: 1
+        
+OOC Probes: 10.1.0.2:60636 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:63632 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  cd13f27f
+        nidx:   127
+        nqueue: 3 
+Spoofed; out-of-connection:
+        b'hash:  ffe24c77
+        nidx:   119
+        nqueue: 3
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:57500 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:63341 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  d32afcf2
+        nidx:   242
+        nqueue: 2 
+Spoofed; in-connection:
+        b'hash:  6e8c75de
+        nidx:   478
+        nqueue: 2
+        
+OOC Probes: 10.1.0.2:59250 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:53272 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  6005500c
+        nidx:   12
+        nqueue: 0 
+Spoofed; out-of-connection:
+        b'hash:  ae6fb568
+        nidx:   360
+        nqueue: 0
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:64709 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:63877 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  f03f5403
+        nidx:   3
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  1c7e5fdb
+        nidx:   475
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:64728 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:51794 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  4abc7a55
+        nidx:   85
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  0a99c701
+        nidx:   257
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:50352 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:52726 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  dc53c5ff
+        nidx:   511
+        nqueue: 3 
+Spoofed; in-connection:
+        b'hash:  50be0527
+        nidx:   295
+        nqueue: 3
+        
+OOC Probes: 10.1.0.2:58165 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:56445 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  002eb529
+        nidx:   297
+        nqueue: 1 
+Spoofed; out-of-connection:
+        b'hash:  62466655
+        nidx:   85
+        nqueue: 1
+        
+------------------------------------------------------
+IC Probes: 10.1.0.2:63256 -> 10.100.0.1:8080
+IC Spoofed: 192.168.1.21:53816 -> 192.168.1.6:8080
+Probe; in-connection:
+        b'hash:  b716a2d4
+        nidx:   212
+        nqueue: 0 
+Spoofed; in-connection:
+        b'hash:  e7074140
+        nidx:   320
+        nqueue: 0
+        
+OOC Probes: 10.1.0.2:64359 -> 10.100.0.1:8080
+OOC Spoofed: 192.168.1.21:57177 -> 192.168.1.6:8080
+Probe; out-of-connection:
+        b'hash:  8523c08e
+        nidx:   142
+        nqueue: 2 
+Spoofed; out-of-connection:
+        b'hash:  e5ac04d2
+        nidx:   210
+        nqueue: 2
+        
